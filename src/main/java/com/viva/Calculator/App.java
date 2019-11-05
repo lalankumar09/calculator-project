@@ -18,4 +18,7 @@ public class App
    public int div(int x,int y) {
 	   return x/y;
    }
+   public int modulusDiv(int x,int y) {
+	   return x%y;
+   }
 }
