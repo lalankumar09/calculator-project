@@ -60,6 +60,17 @@ public class AppTest
 		assertNotEquals(1, app.div(24, 12));
 		System.out.println("divFail Executed");
 	}
+	
+	@Test
+	public void modulusDivTrue() {
+		assertEquals(1, app.modulusDiv(13, 12));
+		System.out.println("modulusDivTrue Executed");
+	}
+	@Test
+	public void modulusDivFail() {
+		assertNotEquals(2, app.modulusDiv(13, 12));
+		System.out.println("modulusDivFail Executed");
+	}
 	@Test(expected = ArithmeticException.class)
         public void testDivideByZero() {
         int a = 15;
